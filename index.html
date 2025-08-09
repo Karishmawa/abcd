@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Your Name — Portfolio</title>
+    <meta name="description" content="Portfolio of Your Name: projects, experience, and contact." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <a href="#home" class="logo">YN</a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <ul class="nav-links">
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a class="btn btn-primary" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero" aria-label="Hero">
+        <div class="container hero-grid">
+          <div class="hero-text">
+            <p class="eyebrow">Hi, I’m</p>
+            <h1 class="hero-title">Your Name</h1>
+            <p class="hero-subtitle">Software Engineer • Web Developer • Problem Solver</p>
+            <div class="hero-ctas">
+              <a class="btn btn-primary" href="#projects">View Projects</a>
+              <a class="btn" href="#contact">Get in Touch</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop" alt="Workspace"/>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section" aria-label="Projects">
+        <div class="container">
+          <h2 class="section-title">Projects</h2>
+          <div class="grid projects-grid" id="projectsGrid">
+            <!-- Cards injected by script.js or keep sample cards below -->
+            <article class="card">
+              <div class="card-body">
+                <h3 class="card-title">Project One</h3>
+                <p class="card-text">Brief description of the project highlighting your role and impact.</p>
+                <div class="card-tags">
+                  <span>React</span><span>Node</span><span>PostgreSQL</span>
+                </div>
+              </div>
+              <div class="card-actions">
+                <a href="#" class="btn btn-sm" target="_blank" rel="noopener">Live</a>
+                <a href="#" class="btn btn-sm" target="_blank" rel="noopener">Source</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-body">
+                <h3 class="card-title">Project Two</h3>
+                <p class="card-text">Short blurb about what problem the project solves and technologies used.</p>
+                <div class="card-tags">
+                  <span>TypeScript</span><span>Next.js</span><span>Tailwind</span>
+                </div>
+              </div>
+              <div class="card-actions">
+                <a href="#" class="btn btn-sm" target="_blank" rel="noopener">Live</a>
+                <a href="#" class="btn btn-sm" target="_blank" rel="noopener">Source</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-body">
+                <h3 class="card-title">Project Three</h3>
+                <p class="card-text">What you built, notable results, and any metrics you can share.</p>
+                <div class="card-tags">
+                  <span>Python</span><span>Flask</span><span>Docker</span>
+                </div>
+              </div>
+              <div class="card-actions">
+                <a href="#" class="btn btn-sm" target="_blank" rel="noopener">Live</a>
+                <a href="#" class="btn btn-sm" target="_blank" rel="noopener">Source</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section" aria-label="Skills">
+        <div class="container">
+          <h2 class="section-title">Skills</h2>
+          <ul class="chips">
+            <li>JavaScript</li><li>TypeScript</li><li>React</li><li>Next.js</li>
+            <li>Node.js</li><li>Python</li><li>Django</li><li>Flask</li>
+            <li>SQL</li><li>PostgreSQL</li><li>MongoDB</li><li>Docker</li>
+            <li>AWS</li><li>CI/CD</li><li>Testing</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="experience" class="section" aria-label="Experience">
+        <div class="container">
+          <h2 class="section-title">Experience</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <h3>Senior Software Engineer — Company A</h3>
+                <p class="muted">2022 — Present</p>
+                <ul>
+                  <li>Lead development of X, improving Y by Z%.</li>
+                  <li>Architected microservice migration, reducing costs.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <h3>Software Engineer — Company B</h3>
+                <p class="muted">2020 — 2022</p>
+                <ul>
+                  <li>Built feature A used by N+ users.</li>
+                  <li>Optimized performance, cutting p95 latency by 35%.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section" aria-label="About">
+        <div class="container">
+          <h2 class="section-title">About</h2>
+          <p>
+            Short bio about who you are, what you care about, and the kind of work you
+            enjoy. Mention strengths, domains, and any notable achievements.
+          </p>
+        </div>
+      </section>
+
+      <section id="contact" class="section" aria-label="Contact">
+        <div class="container">
+          <h2 class="section-title">Contact</h2>
+          <form id="contactForm" class="contact-form" netlify>
+            <div class="form-grid">
+              <label>
+                <span>Name</span>
+                <input type="text" name="name" required />
+              </label>
+              <label>
+                <span>Email</span>
+                <input type="email" name="email" required />
+              </label>
+              <label class="full">
+                <span>Message</span>
+                <textarea name="message" rows="5" required></textarea>
+              </label>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Send</button>
+              <span id="formStatus" class="form-status" role="status" aria-live="polite"></span>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <p>© <span id="year"></span> Your Name</p>
+        <ul class="social">
+          <li><a href="https://github.com/your" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/your" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a></li>
+          <li><a href="mailto:you@example.com" aria-label="Email">Email</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
